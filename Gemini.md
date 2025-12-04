@@ -1,3 +1,5 @@
+# Getting feedback from gemini about a possible bot idea
+
 > Trying to develop a bot for discord image embeds. a user submits a link to an image and it takes that image and embeds it as a message with part of the body containing the image as an embed. However, the user may submit a spoiler to a new chapter, so I was wondering if it was possible to spoiler an image within an embed?
 
 The short answer is **no**, you cannot strictly spoiler an image *inside* the customized Embed frame (the box with the colored border). The Discord API does not provide a `spoiler: true` flag for the `image` or `thumbnail` fields within an Embed object.
